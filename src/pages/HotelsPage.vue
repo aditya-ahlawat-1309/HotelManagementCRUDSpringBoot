@@ -112,6 +112,7 @@ const columns = [
     field: (row) => row.hotelName,
     format: (val) => `${val}`,
     sortable: true,
+    sortOrder: 'ad',
   },
   {
     name: "address",
