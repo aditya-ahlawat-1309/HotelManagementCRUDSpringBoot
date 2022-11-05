@@ -149,7 +149,7 @@ export default defineComponent({
 
     function getHotel() {
       axios
-        .get("http://localhost:5000/api/getHotel")
+        .get("https://hotel-management-crud.herokuapp.com/api/getHotel")
         .then((response) => {
           backend.value = response.data;
           console.log(response.data);
@@ -178,7 +178,7 @@ export default defineComponent({
   methods: {
     postHotel() {
       axios
-        .post("http://localhost:5000/api/postHotel", this.form)
+        .post("https://hotel-management-crud.herokuapp.com/api/postHotel", this.form)
         .then((response) => {
           console.log(response);
           window.location.reload();
