@@ -201,7 +201,7 @@ export default defineComponent({
 
     function getRoom() {
       axios
-        .get("http://localhost:5000/api/getRoom")
+        .get("https://hotel-management-crud.herokuapp.com/api/getRoom")
         .then((response) => {
           backend.value = response.data;
           console.log(response.data);
@@ -231,7 +231,7 @@ export default defineComponent({
   methods: {
     postRoom() {
       axios
-        .post("http://localhost:5000/api/postRoom", this.form)
+        .post("https://hotel-management-crud.herokuapp.com/api/postRoom", this.form)
         .then((response) => {
           console.log(response);
           window.location.reload();
